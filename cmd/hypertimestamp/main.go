@@ -37,5 +37,5 @@ func main() {
 
 func runFunc(cmd *cobra.Command, args []string) error {
 	rpcchainvm.Serve(controller.New())
-	return cmd.Help()
+	return nil
 }
