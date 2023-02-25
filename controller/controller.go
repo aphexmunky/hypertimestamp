@@ -25,7 +25,7 @@ func (c *Controller) Initialize(
 	snowCtx *snow.Context,
 	gatherer ametrics.MultiGatherer,
 	genesisBytes []byte,
-	upgradeBytes []byte, // subnets to allow for AWM
+	upgradeBytes []byte,
 	configBytes []byte,
 ) (
 	vm.Config,
@@ -43,7 +43,6 @@ func (c *Controller) Initialize(
 }
 
 func (c *Controller) Rules(t int64) chain.Rules {
-	// TODO: extend with [UpgradeBytes]
 	return nil
 }
 
@@ -52,6 +51,5 @@ func (c *Controller) Accepted(ctx context.Context, blk *chain.StatelessBlock) er
 }
 
 func (*Controller) Rejected(context.Context, *chain.StatelessBlock) error {
-	// Do nothing
 	return nil
 }
