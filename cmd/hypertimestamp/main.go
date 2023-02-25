@@ -5,14 +5,16 @@ import (
 	"os"
 
 	"github.com/aphexmunky/hypertimestamp/cmd/hypertimestamp/version"
+	"github.com/aphexmunky/hypertimestamp/controller"
+	"github.com/ava-labs/avalanchego/vms/rpcchainvm"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "hypertimestamp",
-	Short: "hypertimestamp agent",
+	Use:        "hypertimestamp",
+	Short:      "hypertimestamp agent",
 	SuggestFor: []string{"hypertimestamp"},
-	RunE: runFunc,
+	RunE:       runFunc,
 }
 
 func init() {
@@ -34,5 +36,6 @@ func main() {
 }
 
 func runFunc(cmd *cobra.Command, args []string) error {
+	rpcchainvm.Serve(controller.New())
 	return cmd.Help()
 }

@@ -16,7 +16,7 @@ func NewCommand() *cobra.Command {
 	return &cobra.Command{
 		Use:   "version",
 		Short: "Print the version number of hypertimestamp",
-		RunE: versionFunc,
+		RunE:  versionFunc,
 	}
 }
 
