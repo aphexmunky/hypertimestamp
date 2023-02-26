@@ -3,7 +3,7 @@ module github.com/aphexmunky/hypertimestamp
 go 1.20
 
 require (
-	github.com/ava-labs/avalanchego v1.9.8
+	github.com/ava-labs/avalanchego v1.9.9
 	github.com/ava-labs/hypersdk v0.0.1
 	github.com/spf13/cobra v1.6.1
 )
@@ -14,7 +14,6 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/fatih/color v1.13.0 // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
@@ -25,17 +24,10 @@ require (
 	github.com/gorilla/rpc v1.2.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.12.0 // indirect
-	github.com/hashicorp/go-hclog v1.2.2 // indirect
-	github.com/hashicorp/go-plugin v1.4.4 // indirect
-	github.com/hashicorp/yamux v0.0.0-20200609203250-aecfd211c9ce // indirect
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
-	github.com/mattn/go-colorable v0.1.12 // indirect
-	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
-	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect
 	github.com/nbutton23/zxcvbn-go v0.0.0-20180912185939-ae427f1e4c1d // indirect
-	github.com/oklog/run v1.1.0 // indirect
 	github.com/onsi/ginkgo/v2 v2.4.0 // indirect
 	github.com/openzipkin/zipkin-go v0.4.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
